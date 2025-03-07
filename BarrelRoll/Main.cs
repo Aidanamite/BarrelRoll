@@ -14,10 +14,11 @@ using Object = UnityEngine.Object;
 
 namespace BarrelRoll
 {
-    [BepInPlugin("com.aidanamite.BarrelRoll", "Barrel Roll", "1.0.0")]
+    [BepInPlugin("com.aidanamite.BarrelRoll", "Barrel Roll", VERSION)]
     [BepInDependency("com.aidanamite.ConfigTweaks")]
     public class Main : BaseUnityPlugin
     {
+        public const string VERSION = "1.0.0";
         public void Awake()
         {
             new Harmony("com.aidanamite.BarrelRoll").PatchAll();
